@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.tford.drawing.MyView
+        android:id="@+id/my_view"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:background="@drawable/border"
+        android:padding="10px">
+    </com.tford.drawing.MyView>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x_1 = ">
+            </TextView>
+            <EditText
+                android:id="@+id/x_1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x_2 = ">
+            </TextView>
+            <EditText
+                android:id="@+id/x_2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="y = ">
+            </TextView>
+            <EditText
+                android:id="@+id/y_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number">
+            </EditText>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Draw Line"
+        android:onClick="drawLine">
+    </Button>
+</LinearLayout>
